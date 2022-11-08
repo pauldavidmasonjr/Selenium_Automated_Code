@@ -1,10 +1,12 @@
 package WebApp;
 
-import java.util.Date;
 import java.util.List;
 
 public class Plan {
 
+
+
+   private Integer companyId = 0;
    private String name = "";
    private String displayName = "";
    private String planType = "";
@@ -12,14 +14,16 @@ public class Plan {
    private List<String> coveredPropertyTypes;
    private String serviceFrequency;
    private String billingFrequency;
-   private Date startDate;
-   private Date endDate;
+   private String billingFrequencyNotes;
+   private String startDate;
+   private String endDate;
    private String measurementUnit;
    private List<PricingTier> priceTiers;
-   private List<String> coveredPests;
-   private List<String> GuaranteedPests;
+   private List<Service> services;
 
-   public Plan(String name, String displayName, String planType, List<String> serviceAreas, List<String> coveredPropertyTypes, String serviceFrequency, String billingFrequency, Date startDate, Date endDate, String measurementUnit, List<PricingTier> priceTiers, List<String> coveredPests, List<String> guaranteedPests) {
+   public Plan(String comName, Integer comId, String name, String displayName, String planType, List<String> serviceAreas, List<String> coveredPropertyTypes, String serviceFrequency, String billingFrequency, String billingFrequencyNotes, String startDate, String endDate, String measurementUnit, List<PricingTier> priceTiers,List<Service> services, List<String> guaranteedPests) {
+      this.companyName = comName;
+      this.companyId = comId;
       this.name = name;
       this.displayName = displayName;
       this.planType = planType;
@@ -27,12 +31,36 @@ public class Plan {
       this.coveredPropertyTypes = coveredPropertyTypes;
       this.serviceFrequency = serviceFrequency;
       this.billingFrequency = billingFrequency;
+      this.billingFrequencyNotes = billingFrequencyNotes;
       this.startDate = startDate;
       this.endDate = endDate;
       this.measurementUnit = measurementUnit;
       this.priceTiers = priceTiers;
-      this.coveredPests = coveredPests;
-      GuaranteedPests = guaranteedPests;
+      this.services = services;
+
+   }
+
+   public Plan()
+   {
+
+   }
+
+   private String companyName = "";
+
+   public String getCompanyName() {
+      return companyName;
+   }
+
+   public void setCompanyName(String companyName) {
+      this.companyName = companyName;
+   }
+
+   public Integer getCompanyId() {
+      return companyId;
+   }
+
+   public void setCompanyId(Integer companyId) {
+      this.companyId = companyId;
    }
 
    public String getName() {
@@ -91,19 +119,23 @@ public class Plan {
       this.billingFrequency = billingFrequency;
    }
 
-   public Date getStartDate() {
+   public String getBillingFrequencyNotes() { return billingFrequencyNotes;}
+
+   public void setBillingFrequencyNotes(String billingFrequencyNotes) { this.billingFrequencyNotes = billingFrequencyNotes;}
+
+   public String getStartDate() {
       return startDate;
    }
 
-   public void setStartDate(Date startDate) {
+   public void setStartDate(String startDate) {
       this.startDate = startDate;
    }
 
-   public Date getEndDate() {
+   public String getEndDate() {
       return endDate;
    }
 
-   public void setEndDate(Date endDate) {
+   public void setEndDate(String endDate) {
       this.endDate = endDate;
    }
 
@@ -123,19 +155,12 @@ public class Plan {
       this.priceTiers = priceTiers;
    }
 
-   public List<String> getCoveredPests() {
-      return coveredPests;
+   public List<Service> getServices() {
+      return services;
    }
 
-   public void setCoveredPests(List<String> coveredPests) {
-      this.coveredPests = coveredPests;
+   public void setServices(List<Service> services) {
+      this.services = services;
    }
 
-   public List<String> getGuaranteedPests() {
-      return GuaranteedPests;
-   }
-
-   public void setGuaranteedPests(List<String> guaranteedPests) {
-      GuaranteedPests = guaranteedPests;
-   }
 }

@@ -1,193 +1,115 @@
 package BrowserStack;
 
-import XPathClasses.*;
-import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
+import Services.WebAppService;
+import WebApp.*;
 
-import java.awt.*;
+import java.io.IOException;
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class FirstSeleniumAutomation {
 
-    public static void main(String[] args) throws InterruptedException, AWTException {
+    public static void main(String[] args) throws ParseException, InterruptedException, IOException {
 
 
-        System.out.println("Hello World!");
-        // TODO Auto-generated method stub
+        // ------------------------------ Company ID ------------------------------------------------------------------
+        Integer companyId = 1501;
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        //setting the driver executable
-        System.setProperty("webdriver.chrome.driver", ".\\Driver\\chromedriver.exe");
+        // ------------------------------ Plan Name -------------------------------------------------------------------
+        String planName = "Test Plan Name";
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        //Initiating your chromedriver
-        WebDriver driver=new ChromeDriver();
+        // ------------------------------ Display Name ----------------------------------------------------------------
+        String displayName = "Test Display Name";
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        //Applied wait time
-        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //maximize window
-        driver.manage().window().maximize();
+        // ------------------------------ Service Frequency -----------------------------------------------------------
+        String serFreq = ServiceFrequency.Custom;
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        //open browser with desried URL
-        driver.get("https://communication.workwave.com/inbox");
+        // ------------------------------ Billing Frequency -----------------------------------------------------------
+        String billFreq = BillingFrequency.CustomBilling;
+        /////////////////////////////////////////////////////////////////////////////////////////////
 
-        // sling shot login select
-        driver.findElement(By.cssSelector("a[href*='https://slingshot.workwave.com/login']")).click();
+        // ------------------------------ Measurement Unit ------------------------------------------------------------
+        String measureUnit = MeasurementUnit.DefaultSquareFootageHome;
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        // Login with credentials
-        driver.findElement(By.id("user_email")).sendKeys("paul.masonjr@workwave.com");
-        driver.findElement(By.id("user_password")).sendKeys("Hudson27Brooks26Knox11!");
-        driver.findElement(By.cssSelector("input[type*='submit']")).click();
+        // ------------------------------ Service Areas ---------------------------------------------------------------
+        List<String> serviceAreas = Arrays.asList("");
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        //go to companies page
-        driver.get("https://slingshot.workwave.com/companies");
-
-        //search for company
-        driver.findElement(By.id("query")).sendKeys("Mosquito Squad (Annapolis)");
-        driver.findElement(By.id("query")).sendKeys(Keys.RETURN);
-
-        //click company
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        driver.findElement(By.cssSelector("a[href*='/companies/1068']")).click();
-
-        //Click Business Profile
-        driver.findElement(By.cssSelector("a[href*='/companies/1068/business-info']")).click();
-
-        //Click Plan and Pricing
-        driver.findElement(By.cssSelector("a[href*='/companies/1068/plans']")).click();
-
-        //click new plan
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div[2]/button[2]/span")).click();
-
-        /////////////////////////////////////////////// FIELD INPUTS /////////////////////////////////////////////////////////////////
-        //name
-        driver.findElement(By.cssSelector("input[name*='name']")).sendKeys("Test Plan Name");
-        //display Name
-        driver.findElement(By.cssSelector("input[name*='displayName']")).sendKeys("Test Display Name");
-
-        //////////////////////////////////////////////// PLAN TYPE ////////////////////////////////////////////////////////////////////
-        driver.findElement(By.xpath(PlanType.PlanXPath)).click();
-
-        ///////////////////////////////////////////// SERVICE AREAS ///////////////////////////////////////////////////////////////////
-        driver.findElement(By.xpath("//*[@id=\"root\"]/div[4]/div[2]/div[2]/div/div[1]/div[1]/div/div[1]/input")).click();
-
-        //////////////////////////////////////// COVERED PROPERTY TYPES ///////////////////////////////////////////////////////////////
-        //Apartment
-        driver.findElement(By.xpath(CoveredPropertyTypes.ApartmentXPath)).click();
-        //Commercial Property
-        driver.findElement(By.xpath(CoveredPropertyTypes.CommercialPropertyXPath)).click();
-        //Condo
-        driver.findElement(By.xpath(CoveredPropertyTypes.CondoXPath)).click();
-        //Mobile Home
-        driver.findElement(By.xpath(CoveredPropertyTypes.MobileHomeXPath)).click();
-        //Multi-Unit Residence
-        driver.findElement(By.xpath(CoveredPropertyTypes.MultiUnitResidenceXPath)).click();
-        //Single-Family Home
-        driver.findElement(By.xpath(CoveredPropertyTypes.SingleFamilyHomeXPath)).click();
-        //Townhouse
-        driver.findElement(By.xpath(CoveredPropertyTypes.TownHomeXPath)).click();
-
-        //////////////////////////////////////////// SERVICE FREQUENCY ///////////////////////////////////////////////////////////////////
-        // Bi Annual
-        driver.findElement((By.xpath(ServiceFrequency.BiAnnualXPath))).click();
-
-        //////////////////////////////////////////// BILLING FREQUENCY /////////////////////////////////////////////////////////////////////
-        driver.findElement(By.xpath(BillingFrequency.PerYearXPath)).click();
-
-        //////////////////////////////////////////// START & END DATE ////////////////////////////////////////////////////////////////////////////
-        //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/mm/dd");
-        //LocalDate localDate = LocalDate.now();
-        //driver.findElement(fromDate).sendKeys(dtf.format(localDate));
-        //driver.findElement(By.xpath(Dates.StartDateXPath)).click();
-        //driver.findElement(By.xpath(Dates.StartDateXPath)).sendKeys("05/02/2022");
-        //driver.findElement(By.xpath(Dates.EndDateXPath)).sendKeys("05012022");
-
-        //JavascriptExecutor js = (JavascriptExecutor)driver;
-        //js.executeScript("document.evaluate("+Dates.StartDateXPath+", document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null ).value='2018-07-17'");
-
-        //WebElement startDate=driver.findElement(By.xpath(Dates.StartDateXPath));
-
-        //startDate.clear();
-        //startDate.sendKeys("05012022s");
-        //startDate.sendKeys("05012022s");
+        // ------------------------------ Covered Properties ----------------------------------------------------------
+        List<String> coverPropertyTypes = Arrays.asList(
+                                            CoveredPropertyTypes.ApartmentId,
+                                            CoveredPropertyTypes.CondoId,
+                                            CoveredPropertyTypes.MobileHomeId,
+                                            CoveredPropertyTypes.MultiUnitResidenceId
+                                        );
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-        /////////////////////////////////////////// Measurement Unit /////////////////////////////////////////////////////////////////////////
-        driver.findElement(By.xpath(MeasurementUnit.SquareFootageHomeXPath)).click();
-
-        ////////////////////////////////////////// Create New PRicing Tier //////////////////////////////////////////////////////////////
-        driver.findElement(By.xpath(Buttons.CreateNewPricingTierXPath)).click();
-        driver.findElement(By.xpath(Buttons.CreateNewPricingTierXPath)).click();
-        driver.findElement(By.xpath(Buttons.CreateNewPricingTierXPath)).click();
-        driver.findElement(By.xpath(Buttons.CreateNewPricingTierXPath)).click();
-        driver.findElement(By.xpath(Buttons.CreateNewPricingTierXPath)).click();
-        driver.findElement(By.xpath(Buttons.CreateNewPricingTierXPath)).click();
-        driver.findElement(By.xpath(Buttons.CreateNewPricingTierXPath)).click();
-        driver.findElement(By.xpath(Buttons.CreateNewPricingTierXPath)).click();
+        // ------------------------------ Start and End Dates ---------------------------------------------------------
+        String startDateString = "2022-01-02";
+        String endDateString = "2022-12-27";
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-        //////////////////////////////////////////////// INSERT DATA INTO PRICE TIERS //////////////////////////////////////////////////////
+        // ------------------------------ Services --------------------------------------------------------------------
+        Service service1 = new Service("Fleas", true);
+        Service service2 = new Service("Mosquitoes", true);
 
-        List<WebElement> col = driver.findElements(By.xpath("//*[@id=\"root\"]/div[4]/div[3]/div[2]/div/div/table/thead/tr/th"));
-        List<WebElement> row = driver.findElements(By.xpath("//*[@id=\"root\"]/div[4]/div[3]/div[2]/div/div/table/tbody/tr/td[1]"));
-
-        System.out.println("COL SIZE: " + col.size());
-        System.out.println("ROW SIZE: " + row.size());
-
-        for(int currentCol = 1; currentCol < col.size(); currentCol++)
-        {
-            System.out.println("currentCol: "+col);
-            for (int currentRow = 1; currentRow <= row.size(); currentRow++)
-            {
-                System.out.println("currentRow: "+currentRow);
-                driver.findElement(By.xpath("//*[@id=\"root\"]/div[4]/div[3]/div[2]/div/div/table/tbody/tr["+currentRow+"]/td["+currentCol+"]/div/div[1]/input")).sendKeys("1");
-                driver.findElement(By.xpath("//*[@id=\"root\"]/div[4]/div[3]/div[2]/div/div/table/tbody/tr["+currentRow+"]/td["+currentCol+"]/div/div[2]/input")).sendKeys("2");
-            }
-        }
-
-        ///////////////////////////////////////////////////// Drag Drop Covered Pests ////////////////////////////////////////////////////////////
-
-        //need to get all following sibling divs to drag
-        List<WebElement> dragRows = driver.findElements(By.xpath("/html/body/div[1]/div/div[4]/div[4]/div/div[1]/div[2]/div"));
-
-        System.out.println("DRAG ROW: " + dragRows.size());
-        System.out.println(dragRows.toString());
-
-        WebElement To = driver.findElement(By.xpath("//*[@id=\"root\"]/div[4]/div[4]/div/div[2]/div[2]"));
+        List<Service> services = new ArrayList<Service>();
+        services.add(service1);
+        services.add(service2);
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-        for(int currentDragRow=1; currentDragRow <= dragRows.size(); currentDragRow++)
-        {
-            System.out.println("CURENT DRAG ROW: " + currentDragRow);
-            if (currentDragRow == 1)
-            {
-                //do nothing this is the search bar row
-            }
-            else
-            {
-                WebElement sourceElement = driver.findElement(By.xpath("//*[@id=\"root\"]/div[4]/div[4]/div/div[1]/div[2]/div[2]/div[1]"));
+        // ------------------------------ Pricing Tiers ----------------------------------------------------------------
+        PricingTier priceT1 = new PricingTier(1, 2000, 250, 250, 450, 450);
+        PricingTier priceT2 = new PricingTier(2001, 4000, 350, 350, 550, 550);
+        PricingTier priceT3 = new PricingTier(4001, 5000, 450, 450, 650, 650);
 
-                WebElement pestElement = driver.findElement(By.xpath("//*[@id=\"root\"]/div[4]/div[4]/div/div[1]/div[2]/div[2]/div[2]"));
+        List<PricingTier> pricingTierList = new ArrayList();
+        pricingTierList.add(priceT1);
+        pricingTierList.add(priceT2);
+        pricingTierList.add(priceT3);
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-                String pest = pestElement.getText();
 
-                if(pest.equals("Fleas") || pest.equals("Mosquitoes"))
-                {
-                    sourceElement.sendKeys(Keys.SPACE);
-                    sourceElement.sendKeys(Keys.ARROW_RIGHT);
-                    sourceElement.sendKeys(Keys.SPACE);
-                }
 
-//                sourceElement.sendKeys(Keys.SPACE);
-//                sourceElement.sendKeys(Keys.ARROW_RIGHT);
-//                sourceElement.sendKeys(Keys.SPACE);
-            }
-        }
 
-        //closing the browser
-        //driver.close();
-        //*[@id="root"]/div[4]/div[4]/div/div[1]/div[2]/div[1]
-        //*[@id="root"]/div[4]/div[4]/div/div[1]/div[2]/div[2]
+
+
+        //----------------------------------- DO NOT EDIT ANYTHING BELOW THIS LINE -------------------------------------
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        Plan newPlan = new Plan();
+
+        //newPlan.setCompanyName("Mosquito Squad (Annapolis)");
+        newPlan.setCompanyId(companyId);
+        newPlan.setName(planName);
+        newPlan.setDisplayName(displayName);
+        newPlan.setPlanType("plan");
+        newPlan.setServiceAreas(serviceAreas);
+        newPlan.setCoveredPropertyTypes(coverPropertyTypes);
+        newPlan.setServiceFrequency(serFreq);
+        newPlan.setBillingFrequency(billFreq);
+        newPlan.setBillingFrequencyNotes("");
+        newPlan.setStartDate(startDateString);
+        newPlan.setEndDate(endDateString);
+        newPlan.setMeasurementUnit(measureUnit);
+        newPlan.setPriceTiers(pricingTierList);
+        newPlan.setServices(services);
+
+        // Calling Service
+        WebAppService webAppService = new WebAppService();
+        //webAppService.createNewPlan(newPlan);
+
+        webAppService.GetCookieFromLogin();
     }
 
 }
