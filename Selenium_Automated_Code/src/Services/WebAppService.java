@@ -27,17 +27,16 @@ public class WebAppService {
                 .build();
         MediaType mediaType = MediaType.parse("application/json");
         RequestBody body = RequestBody.create(mediaType, convertedPostBody);
-        //RequestBody body = RequestBody.create(mediaType, "{\"billing_frequency\":\"per_service\",\"company_id\":1501,\"display_name\":\"Fully working solution display name\",\"end_day\":\"0000-12-31\",\"frequency\":\"custom\",\"frequency_notes\":\"\",\"id\":null,\"include_services_on_sidebar\":true,\"kind\":\"plan\",\"measurement_unit\":\"Default\",\"name\":\"Fully working solution\",\"pricing_rule\":\"always_apply\",\"quotable_only\":false,\"start_day\":\"0000-02-02\",\"recurring_charges_count\":\"\",\"add_ons\":[],\"available_add_ons\":[],\"covered_property_types\":[4,3,5,7],\"options\":[],\"plans\":[],\"pricing_tiers\":[{\"measurement\":[1,2000],\"initial_price\":[250,250],\"recurring_price\":[450,450]},{\"measurement\":[2001,4000],\"initial_price\":[350,350],\"recurring_price\":[550,550]},{\"measurement\":[4001,5000],\"initial_price\":[450,450],\"recurring_price\":[650,650]}],\"service_maps\":[],\"services\":[{\"id\":1,\"name\":\"Fleas\",\"guaranteed\":true},{\"id\":2,\"name\":\"Mosquitoes\",\"guaranteed\":true}]}\n");
         Request request = new Request.Builder()
-                .url("https://slingshot.workwave.dev/api/companies/1501/plans")
+                .url("https://slingshot.workwave.dev/api/companies/"+newPlan.getCompanyId()+"/plans")
                 .method("POST", body)
                 .addHeader("Accept", "application/json, text/plain, */*")
                 .addHeader("Accept-Language", "en-US,en;q=0.9")
                 .addHeader("Connection", "keep-alive")
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Cookie", "_workwave_prod_data_session=T0JxVURuTThJTUQvWktMNWtaYUFWRy9HTm5tVXp1QjU5b3RUOEJVMTA5SWk0YldJeDc1VWpReUJFdUFXOVZHTkZoakZJTkxEZjY1eWpBK082WVhSRHYvMVZ0NEd5SVZJREpXQkp0MEg5WGlFNkowblFkaUxseGY1Y09LNDVXbndja2pKRU9sRDBVbi9USVNYeVN5cDlxR1BkbVNzVUI1V3VGcDVNS0NDdUE3M214MXFRN01lQzNwMU5PbkxRSzJ4Z05mTUJONHNvTGdzSTRmU2dEOE9aWXFOd2NrYTdkR0gwaUR2dXlVQitzdUxSdVZtcFp3QnBrc2tYVVZRZkRKbVRYSUJCd281cTl0V3VaZU5XMGgvakg0TlJBM1Y1SjFlVnJFbXZFT3AvMnIwSXUyWGxpTDRwOWNlMEVZNmFHT2dETHJaOUhBWkl4ZnRDckl2UUFrSm1xaWswVmVnUmFVOEZJcFY0VnVqTzFXQTRHcEVZRkU3QTlRNlh3aWRZaDM5cXBCUHhObytMNUZEb3lPL2M5M0VXeXovNTdqMDdMdEsyNFo1dzZhSDNEVzB1ZEY0cDNNQ09NTVhrazIwUVVaTTRpbEhSV3RtYzhTSmJlVDNBOUl5Skx4dEQ0Rmw3V2s2OWV2TWhCdythWmhvQ3l6WWl4am1aRHk0NW9lSjhYRGlrUWpGaDI3VkRCcU5JVzJwWDJNUWJpbkJFaGtudDNRd3dEWXhWeWRNMzRSQkUyRENlZFFodGx5SlB6S3V5NVdaLS1XWEJyS050dmZiRGxhRGE5Nm1teWNRPT0%3D--3de2fefc96a7a85373c75a586d28e20f611538ff")
+                .addHeader("Cookie", "_workwave_prod_data_session=UnZWMldkZHIvVzJJckRybTZpck9ESW5CUUtQUE5UelhaaHBqZ1dPNUdDai9BM2dIVWIzeVB5UjBPTldpcjAyN1NyK3hadmJCSEw3VFV2UWZnd2o5bGg1Z2FkSU96TVIzNVd0U3llUjRndmlNcHNDMnd5TkRVN3JZVm5xdlBURlZOVGVzeVYzbHlxTmRwT1pLQUI0aGVORzFLUjg3c1VkbjRFbGhpdlArNTZWVzByMFVVSVJnTUFCYTJPZllFcFhRVHVEQ1g0eHg5bS9RdGlhcUNKUGQ3NjJ1TlFpYjh6SlM1T1BrNThsSWMwN21aS3JaaEdsTUxjMVR3ZG9WaXhNV1hIR3BzYUNwRHByZFFmTDdPSG9hNDNFL1ZhcWRJN1Vjb2ZSemZGR080VmxoZkp0T3pHQjZHOWl6Vk9HMXBvdDIxL3U4OFNKdFpEdzFWZGpEVm5WZVdlUDRLekdPUWxidk1qdm9ibGxLb2Rqd0Q4U3hwU3JUbE9vMi9pWHdaQVJ3b3VXc3krNFhyTXp1ZGdoQ2R6UmY0dGZNWmhENlpKSVlkbDM0YjU4QThmTGdBTHd1ZlpnMDdUZlYxWGNwd0g0YUsrd3M4VGw2M2JoS2NiM2ZRbFR2ZDl4dkptOXBtMFRybmJ4VzZ5aE5OOVMzVlcvYU1EMzI2SHVLWGwxanlTNHhZM2Q0VTFHZkNacXJTaFZFSm1qd05MK21QbnBlRHowWWs0eHRpZUxpRVZVdEpTRDRZSEMvSVJWUS90TXhTYm53LS11bHIxMVBHOFBxWC9UL2xLMnVJUXZnPT0%3D--3e031a954ecff7cdf00a68df8cd5ff148163f921")
                 .addHeader("Origin", "https://slingshot.workwave.dev")
-                .addHeader("Referer", "https://slingshot.workwave.dev/companies/1501/plans/new")
+                .addHeader("Referer", "https://slingshot.workwave.dev/companies/"+newPlan.getCompanyId()+"/plans/new")
                 .addHeader("Sec-Fetch-Dest", "empty")
                 .addHeader("Sec-Fetch-Mode", "cors")
                 .addHeader("Sec-Fetch-Site", "same-origin")
