@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f4c67483-6c14-4e44-becf-9c3ba1b19aca" name="Changes" comment="Full solution without cookie">
+      <change afterPath="$PROJECT_DIR$/../JARS/com.fasterxml.jackson.databind.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/jackson-annotations-2.13.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/jackson-core-2.13.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/jackson-databind-2.13.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/java-json.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/json-20220924-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/json-simple-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/object-mapper-0.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/auth/x64/mssql-jdbc_auth-11.2.3.x64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/auth/x86/mssql-jdbc_auth-11.2.3.x86.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/install.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/mssql-jdbc-11.2.3.jre11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/mssql-jdbc-11.2.3.jre17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/mssql-jdbc-11.2.3.jre18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/mssql-jdbc-11.2.3.jre8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/redist.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/release.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/adaptive/ExecuteStoredProcedures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/adaptive/readLargeData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/adaptive/updateLargeData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/alwaysencrypted/AlwaysEncrypted.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/azureactivedirectoryauthentication/AzureActiveDirectoryAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/connections/ConnectDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/connections/ConnectURL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/constrained/ConstrainedDelegation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/dataclassification/DataDiscoveryAndClassification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/datatypes/BasicDataTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/datatypes/SpatialDataTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/datatypes/SqlXmlDataType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/resultsets/CacheResultSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/resultsets/RetrieveResultSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/resultsets/UpdateResultSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/samples/sparse/SparseColumns.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/thirdpartynotices.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/xa/x64/sqljdbc_xa.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/xa/x86/sqljdbc_xa.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JARS/sqljdbc_11.2/enu/xa/xa_install.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SQLServer/Tables/1-23-2023-CREATE-Companies.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SQLServer/Tables/1-23-2023-CREATE-Services.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/FirstSeleniumAutomation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/WebApp/BillingFrequency.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/WebApp/CoveredPropertyTypes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/WebApp/MeasurementUnit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/WebApp/Plan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/WebApp/PricingTier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/WebApp/Service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/WebApp/ServiceFrequency.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/WebApp/config.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/XPathClasses/BillingFrequency.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/XPathClasses/Buttons.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/XPathClasses/CoveredPropertyTypes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/XPathClasses/Dates.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/XPathClasses/MeasurementUnit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/XPathClasses/PlanType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Objects/XPathClasses/ServiceFrequency.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Plan_JSON_Files/961/571.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Repositories/WebAppRespository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Services/MainFrameMenus/CompanyMenu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Services/MainFrameMenus/MainMenu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Services/Selenium/SeleniumAutomation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Services/WebApp/Services.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Services/WebApp/WebAppService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Utility/Credentials.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/JSONObjects/GetSpecificPlanJSON.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/JSONObjects/planJSON.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Plan_JSON_Files/961/571.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repositories/WebAppRespository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/MainFrameMenus/CompanyMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/MainFrameMenus/MainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/WebApp/Services.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Services/WebAppService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Utility/requestBodyCreation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/Utility/requestBodyCreation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/WebApp/BillingFrequency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/WebApp/CoveredPropertyTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/WebApp/MeasurementUnit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/WebApp/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Selenium_Automated_Code/WebApp/ServiceFrequency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutomatedTasks/SeleniumAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Selenium/SeleniumAutomation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BrowserStack/FirstSeleniumAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstSeleniumAutomation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/WebAppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/WebApp/WebAppService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utility/Credentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/Credentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utility/requestBodyCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/requestBodyCreation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApp/BillingFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/WebApp/BillingFrequency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApp/CoveredPropertyTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/WebApp/CoveredPropertyTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApp/MeasurementUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/WebApp/MeasurementUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApp/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/WebApp/Plan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApp/PricingTier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/WebApp/PricingTier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApp/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/WebApp/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApp/ServiceFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/WebApp/ServiceFrequency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApp/config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/WebApp/config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XPathClasses/BillingFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/XPathClasses/BillingFrequency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XPathClasses/Buttons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/XPathClasses/Buttons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XPathClasses/CoveredPropertyTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/XPathClasses/CoveredPropertyTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XPathClasses/Dates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/XPathClasses/Dates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XPathClasses/MeasurementUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/XPathClasses/MeasurementUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XPathClasses/PlanType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/XPathClasses/PlanType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XPathClasses/ServiceFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/XPathClasses/ServiceFrequency.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FhLpIAriwsXg0ID5XvF0QjOSKJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/paul_/Documents/SlingShot Code/Selenium Java/JARS/commons-io-2.11.0.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="FirstSeleniumAutomation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FirstSeleniumAutomation" />
+      <module name="Selenium_Automated_Code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FirstSeleniumAutomation" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4c67483-6c14-4e44-becf-9c3ba1b19aca" name="Changes" comment="" />
+      <created>1664939553403</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664939553403</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Full solution without cookie">
+      <created>1667929062169</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667929062169</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Full solution without cookie">
+      <created>1674166111217</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674166111217</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Full solution without cookie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Full solution without cookie" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Services/WebApp/WebAppService.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Services/WebApp/WebAppService.java</url>
+          <line>152</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Services/WebApp/WebAppService.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Services/WebApp/WebAppService.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Services/WebApp/WebAppService.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Services/WebApp/WebAppService.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Services/WebApp/WebAppService.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Services/WebApp/WebAppService.java</url>
+          <line>193</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="jsonObject" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

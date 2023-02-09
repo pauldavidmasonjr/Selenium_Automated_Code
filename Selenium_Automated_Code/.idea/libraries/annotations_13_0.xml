@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="annotations-13.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../okhttp_jars/annotations-13.0.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../okhttp_jars" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../okhttp_jars" recursive="false" />
+  </library>
+</component>

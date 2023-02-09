@@ -1,6 +1,6 @@
 package Utility;
 
-import WebApp.Plan;
+import Objects.WebApp.Plan;
 
 public class requestBodyCreation {
     public static String createPostBodyFromPlan(Plan newPlan)
