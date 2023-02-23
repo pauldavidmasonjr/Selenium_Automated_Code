@@ -40,9 +40,6 @@ public class CompanyMenu {
                 String planID = reader.readLine();
                 System.out.println("Comany ID: " + companyID + "   Plan ID: " + planID);
                 WebAppService.GetSpecificPlan(planID, companyID);
-                System.out.println("Go to file and update content..... then hit ENTER to update the plan on Webapp.");
-                String ENTER = reader.readLine();
-                WebAppService.UpdatePlan(planID, companyID);
                 displayMenu();
                 break;
             case "s":

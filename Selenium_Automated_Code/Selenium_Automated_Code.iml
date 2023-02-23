@@ -17,5 +17,7 @@
     <orderEntry type="library" name="json-simple-1.1" level="project" />
     <orderEntry type="library" name="nio" level="project" />
     <orderEntry type="library" name="commons-io-2.11.0" level="project" />
+    <orderEntry type="library" name="nio1" level="project" />
+    <orderEntry type="library" name="gson-2.8.2" level="project" />
   </component>
 </module>
